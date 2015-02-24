@@ -9,7 +9,8 @@ var account = require(__dirname + '/lib/account'),
     dns = require(__dirname + '/lib/dns'),
     iso = require(__dirname + '/lib/iso'),
     os = require(__dirname + '/lib/os'),
-    plans = require(__dirname + '/lib/plans');
+    plans = require(__dirname + '/lib/plans'),
+    regions = require(__dirname + '/lib/regions');
 
 /**
  * Vultr instance constructor
@@ -26,6 +27,7 @@ function Vultr(apiKey) {
   this.os = new os(this);
   this.iso = new iso(this);
   this.plans = new plans(this);
+  this.regions = new regions(this);
 }
 
 /**
