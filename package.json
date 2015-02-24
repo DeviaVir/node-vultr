@@ -39,8 +39,8 @@
     "api",
     "library",
     "lib",
-    "trans",
-    "ip"
+    "vps",
+    "service"
   ],
   "author": "Chase Sillevis <chase@sillevis.net> (http://chase.sillevis.net/)",
   "bugs": {
