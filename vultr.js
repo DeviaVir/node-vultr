@@ -6,7 +6,8 @@ var Promise = require('bluebird'),
 var config = require('./config');
 
 var account = require(__dirname + '/lib/account'),
-    dns = require(__dirname + '/lib/dns');
+    dns = require(__dirname + '/lib/dns'),
+    os = require(__dirname + '/lib/os');
 
 /**
  * Vultr instance constructor
@@ -20,6 +21,7 @@ function Vultr(apiKey) {
 
   this.account = new account(this);
   this.dns = new dns(this);
+  this.os = new os(this);
 }
 
 /**
