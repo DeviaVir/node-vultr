@@ -25,7 +25,7 @@
     "sinon-chai": "^2.6.0"
   },
   "description": "Promise-based library to communicate with the Vultr API",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "vultr.js",
   "directories": {
     "test": "test"

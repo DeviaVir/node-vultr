@@ -1,7 +1,7 @@
 # node-vultr
 Node.JS Promise-based library to communicate with the Vultr API
 
-*Work in progress! Not safe for work.*
+Test coverage is currently 100%, although some tests involving actually creating the VPS's itself are currently not tested.
 
 This library creates a new instance of "Vultr" for you, exposing a few libraries and methods you can use to communicate.
 
