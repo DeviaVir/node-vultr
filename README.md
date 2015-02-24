@@ -1,2 +1,2 @@
 # node-vultr
-Node.JS library to communicate with the Vultr API
+Node.JS Promise-based library to communicate with the Vultr API
