@@ -13,7 +13,8 @@ var account = require(__dirname + '/lib/account'),
     regions = require(__dirname + '/lib/regions'),
     server = require(__dirname + '/lib/server'),
     snapshot = require(__dirname + '/lib/snapshot'),
-    sshkey = require(__dirname + '/lib/sshkey');
+    sshkey = require(__dirname + '/lib/sshkey'),
+    startupscript = require(__dirname + '/lib/startupscript');
 
 /**
  * Vultr instance constructor
@@ -34,6 +35,7 @@ function Vultr(apiKey) {
   this.server = new server(this);
   this.snapshot = new snapshot(this);
   this.sshkey = new sshkey(this);
+  this.startupscript = new startupscript(this);
 }
 
 /**
