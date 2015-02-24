@@ -21,22 +21,7 @@ describe('I:Vultr:dns', function() {
     });
   });
 
-  describe( 'records', function() {
-    var vultrInstance;
-    beforeEach(function() {
-      vultrInstance = new Vultr();
-    });
-
-    it( 'should return list of records for testDomain', function(done) {
-      this.timeout(5000);
-
-      return vultrInstance.dns.records(testDomain).then(function(list) {
-        expect(typeof list).to.eql('object');
-      }).then(done, done);
-    });
-  });
-
-  describe.only( 'full rotation', function() {
+  describe( 'full rotation', function() {
     var vultrInstance;
     beforeEach(function() {
       vultrInstance = new Vultr();

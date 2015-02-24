@@ -59,9 +59,11 @@ Vultr.prototype.communicate = function communicate(service, method, data, type) 
   }
 
   console.log('options', options);
-  
-  /** Immediately return the promise */
-  return request(options);
+
+  /** We have to deal with a rate limit of 1 req/sec */
+  return Promise.delay(1000).then(function() {
+    return request(options);
+  });
 };
 
 module.exports = Vultr;
