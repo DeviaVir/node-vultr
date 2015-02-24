@@ -37,7 +37,7 @@ function mocha( glob, args, grep ) {
     , opts = [
       path.join( basePath, glob ),
       '--require', path.join( basePath, 'common.js' ),
-      '--reporter', 'spec',
+      '--reporter', 'nyan', //'spec',
       '--ui', 'bdd',
     ];
 

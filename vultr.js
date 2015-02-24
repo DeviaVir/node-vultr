@@ -11,7 +11,9 @@ var account = require(__dirname + '/lib/account'),
     os = require(__dirname + '/lib/os'),
     plans = require(__dirname + '/lib/plans'),
     regions = require(__dirname + '/lib/regions'),
-    server = require(__dirname + '/lib/server');
+    server = require(__dirname + '/lib/server'),
+    snapshot = require(__dirname + '/lib/snapshot'),
+    sshkey = require(__dirname + '/lib/sshkey');
 
 /**
  * Vultr instance constructor
@@ -30,6 +32,8 @@ function Vultr(apiKey) {
   this.plans = new plans(this);
   this.regions = new regions(this);
   this.server = new server(this);
+  this.snapshot = new snapshot(this);
+  this.sshkey = new sshkey(this);
 }
 
 /**
@@ -68,7 +72,7 @@ Vultr.prototype.communicate = function communicate(service, method, data, type) 
     options.method = type.toUpperCase();
   }
 
-  console.log('options', options);
+  //console.log('options', options);
 
   /** We have to deal with a rate limit of 1 req/sec */
   return Promise.delay(1000).then(function() {
