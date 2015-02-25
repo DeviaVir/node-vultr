@@ -12,7 +12,7 @@ describe('I:Vultr:os', function() {
     });
 
     it( 'should return os list', function(done) {
-      this.timeout(5000);
+      this.timeout(10000);
       return vultrInstance.os.list().then(function(list) {
         expect(typeof list).to.eql('object');
       }).then(done, done);
