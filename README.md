@@ -103,6 +103,16 @@ vultrInstance.iso.list().then(function(list) {
 })
 ```
 
+## Backup
+
+### vultrInstance.backup.list
+
+```js
+vultrInstance.backup.list().then(function(list) {
+  // Returns array with Backup objects
+})
+```
+
 ## Plans
 
 ### vultrInstance.plans.list

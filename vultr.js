@@ -8,6 +8,7 @@ var config = require('./config');
 var account = require(__dirname + '/lib/account'),
     dns = require(__dirname + '/lib/dns'),
     iso = require(__dirname + '/lib/iso'),
+    backup = require(__dirname + '/lib/backup'),
     os = require(__dirname + '/lib/os'),
     plans = require(__dirname + '/lib/plans'),
     regions = require(__dirname + '/lib/regions'),
@@ -30,6 +31,7 @@ function Vultr(apiKey) {
   this.dns = new dns(this);
   this.os = new os(this);
   this.iso = new iso(this);
+  this.backup = new backup(this);
   this.plans = new plans(this);
   this.regions = new regions(this);
   this.server = new server(this);
