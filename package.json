@@ -25,14 +25,14 @@
     "sinon-chai": "^2.6.0"
   },
   "description": "Promise-based library to communicate with the Vultr API",
-  "version": "0.0.6",
+  "version": "0.0.7-1",
   "main": "vultr.js",
   "directories": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DualDev/node-vultr.git"
+    "url": "https://github.com/DeviaVir/node-vultr.git"
   },
   "keywords": [
     "vultr",
@@ -44,7 +44,7 @@
   ],
   "author": "Chase Sillevis <chase@sillevis.net> (http://chase.sillevis.net/)",
   "bugs": {
-    "url": "https://github.com/DualDev/node-vultr/issues"
+    "url": "https://github.com/DeviaVir/node-vultr/issues"
   },
-  "homepage": "https://github.com/DualDev/node-vultr"
+  "homepage": "https://github.com/DeviaVir/node-vultr"
 }
