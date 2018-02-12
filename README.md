@@ -103,6 +103,14 @@ vultrInstance.iso.list().then(function(list) {
 })
 ```
 
+### vultrInstance.iso.createFromUrl
+
+```js
+vultrInstance.iso.createFromUrl().then(function(list) {
+  // Returns Object with ISO upload status
+})
+```
+
 ## Backup
 
 ### vultrInstance.backup.list
