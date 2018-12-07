@@ -12,20 +12,20 @@
   "dependencies": {
     "bluebird": "^2.6.2",
     "moment": "^2.9.0",
-    "request-promise": "^0.4.0"
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {
     "chai": "^1.10.0",
     "chai-as-promised": "^4.1.1",
     "jshint": "^2.5.10",
     "jshint-stylish": "^0.4.0",
-    "mocha": "^1.21.5",
+    "mocha": "^5.2.0",
     "optimist": "^0.6.1",
     "sinon": "^1.12.2",
     "sinon-chai": "^2.6.0"
   },
   "description": "Promise-based library to communicate with the Vultr API",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "vultr.js",
   "directories": {
     "test": "test"
