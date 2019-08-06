@@ -143,7 +143,7 @@ vultrInstance.regions.list().then(function(list) {
 
 ### vultrInstance.regions.availability
 
-Retrieve a list of the VPSPLANIDs currently available in this location. (DCID can be retrieved from `vultrInstance.regions.list()`) 
+Retrieve a list of the VPSPLANIDs currently available in this location. (DCID can be retrieved from `vultrInstance.regions.list()`)
 
 ```js
 vultrInstance.regions.availability(DCID).then(function(plans) {
@@ -437,16 +437,16 @@ vultrInstance.startupscript.create(NAME, KEY)
 
 ### vultrInstance.startupscript.update
 
-`SSHKEYID` can be retrieved from `vultrInstance.startupscript.list()` or after calling `vultrInstance.startupscript.create()`.
+`SCRIPTID` can be retrieved from `vultrInstance.startupscript.list()` or after calling `vultrInstance.startupscript.create()`.
 
 ```js
-vultrInstance.startupscript.update(NAME, KEY, SSHKEYID)
+vultrInstance.startupscript.update(NAME, KEY, SCRIPTID)
 ```
 
 ### vultrInstance.startupscript.destroy
 
-`SSHKEYID` can be retrieved from `vultrInstance.startupscript.list()` or after calling `vultrInstance.startupscript.create()`.
+`SCRIPTID` can be retrieved from `vultrInstance.startupscript.list()` or after calling `vultrInstance.startupscript.create()`.
 
 ```js
-vultrInstance.startupscript.destroy(SSHKEYID)
+vultrInstance.startupscript.destroy(SCRIPTID)
 ```
