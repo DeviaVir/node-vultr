@@ -14,7 +14,7 @@
   "dependencies": {
     "bluebird": "^2.6.2",
     "moment": "^2.27.0",
-    "request-promise": "^4.2.5",
+    "request-promise": "^4.2.6",
     "snyk": "^1.355.0"
   },
   "devDependencies": {
