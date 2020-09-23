@@ -15,7 +15,7 @@
     "bluebird": "^2.6.2",
     "moment": "^2.28.0",
     "request-promise": "^4.2.6",
-    "snyk": "^1.398.1"
+    "snyk": "^1.399.1"
   },
   "devDependencies": {
     "chai": "^1.10.0",
