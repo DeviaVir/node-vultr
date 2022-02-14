@@ -1,3 +1,5 @@
+# WARNING: project is no longer actively maintained, make sure to update any dependencies if you plan on using this in your project.
+
 # node-vultr
 Node.JS Promise-based library to communicate with the Vultr API
 
